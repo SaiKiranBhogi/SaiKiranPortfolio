@@ -384,29 +384,67 @@ section .title::after{
     margin: 10px auto;
 }
 
-#projgrid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;  
+.teams .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
 }
-#portfolio{
-    grid-area: 1/1/3/4;
-    
-}
-#portfolio img{
-    background-size: unset ;
+.teams .carousel .card:hover{
+    background: #798085;
 }
 
-#tic{
-    grid-area: 3/1/4/2;
 
+
+.teams .carousel .card .box{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
 }
-#studentreg{
-    grid-area: 3/2/4/4;
-    
+.teams .carousel .card:hover .box{
+    transform: scale(1.05);
 }
-#calc{
-    grid-area: 1/4/4/6;
+.teams .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.teams .carousel .card img{
+    object-fit:fill;
+    border-radius: 5%;
+    border: 5px solid #798085;
+    transition: all 0.3s ease;
+}
+
+
+
+.teams .carousel .card:hover img{
+    border-color: #fff;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid #798085!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: #798085!important;
 }
 
 
